@@ -28,7 +28,7 @@ def promotion():
             Присоединяйся!<p>"""
 
 
-@app.route('//image_mars')
+@app.route('/image_mars')
 def bootstrap():
     return f'''<!DOCTYPE html>
 <html lang="en">
