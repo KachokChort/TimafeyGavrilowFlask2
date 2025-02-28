@@ -54,28 +54,5 @@ def bootstrap():
 </body>
 </html>'''
 
-
-@app.route('/choice/<planet_name>')
-def bootstrap(planet_name):
-    return f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{url_for('static', filename='style.css')}" />
-    <title>Document</title>
-</head>
-<body>
-    <h1 class="h">Ждт нас {planet_name}!</h1>
-    <p style="font-size: 40px;">
-    <p class="p1">Человечество вырастает из детства.</p>
-    <p class="p2">Человечеству мала одна планета.</p>
-    <p class="p3">Мы сделаем обитаемыми безжизненные пока планеты.</p>
-    <p class="p4">И начнем с Марса!</p>
-    <p class="p5">Присоединяйся!</p><p>
-</body>
-</html>'''
-
-
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
